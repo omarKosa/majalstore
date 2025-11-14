@@ -1,12 +1,13 @@
+import { Navbar } from "./navbar";
+
 interface Props {
     children: React.ReactNode;
 };
 const Page = ({children}: Props) => {
     return (
-        <div>
-            <nav className="bg-red-500 text-white w-full p-2">
-                <p> Navbar this is a modification to test github contributes </p>
-                </nav>
+        <div className="flex flex-col min-h-screen">
+            <Navbar />
+            
             {children}
         </div>
     );
